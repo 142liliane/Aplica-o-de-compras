@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/chkFeijao"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Feijão (R$ 2,70)"
+        app:layout_constraintBottom_toTopOf="@+id/btnTotal"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkCarne" />
+
+    <CheckBox
+        android:id="@+id/chkCarne"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Carne (R$ 9,70)"
+        app:layout_constraintBottom_toTopOf="@+id/chkFeijao"
+        app:layout_constraintEnd_toStartOf="@+id/btnTotal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkArroz"
+        app:layout_constraintTop_toBottomOf="@+id/chkLeite" />
+
+    <CheckBox
+        android:id="@+id/chkLeite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Leite (R$ 5,00)"
+        app:layout_constraintBottom_toTopOf="@+id/chkCarne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTotal"
+        app:layout_constraintTop_toBottomOf="@+id/chkArroz" />
+
+    <CheckBox
+        android:id="@+id/chkArroz"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Arroz (R$ 2,69)"
+        app:layout_constraintBottom_toTopOf="@+id/chkLeite"
+        app:layout_constraintEnd_toStartOf="@+id/chkCarne"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/white"
+        android:text="Escolha o seu produto:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/chkArroz"
+        app:layout_constraintEnd_toStartOf="@+id/chkArroz"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkFeijao"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Total das compras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chkLeite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chkCarne"
+        app:layout_constraintTop_toBottomOf="@+id/chkFeijao" />
+</androidx.constraintlayout.widget.ConstraintLayout>
