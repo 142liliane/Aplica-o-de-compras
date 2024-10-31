@@ -31,9 +31,9 @@
 > O design é minimalista e fácil de usar, com foco na simplicidade.
 
 ## Telas do Aplicativo 1
-> **Tela Principal**
+> **Tela Principal:**
 > Na tela principal, tem um Checkbox com algumas opções de alimento(e seus preços) e o úsuario poderá marcar apenas o que deseja e o aplicativo como resultado mostra a soma de tudo, sendo o valor que o úsuario pagaria.
-> 
+
 ## Desenvolvedores
 > **Liliane Campos Lena**  - Desenvolvedor - [GitHub] (https://github.com/142liliane).
 
